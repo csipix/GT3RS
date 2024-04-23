@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Shippori Mincho", serif;
+}
+
+
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(235, 54, 54);
+    height: auto;
+
+}
+header figure img {
+    height: 100%;
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.13rem;
+  
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+header nav ul li{
+    padding: 2rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(41, 37, 37);
+}
+
+section .background-img {
+    width: 100%;
+    overflow: hidden;
+}
+section .background-img img{
+    width: 100%;
+}
+
+.fent{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.sec{
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+.content {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+}
+
+    .content h1 {
+        padding: 2rem;
+        color: blanchedalmond;
+        font-size: 500%;
+        text-shadow: rgb(0, 0, 0) 1px 0 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .content h2 {
+        padding: 3rem;
+        color: blanchedalmond;
+        font-size: 2rem;
+        text-shadow: rgb(0, 0, 0) 1px 0 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .info h3{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 3rem;
+        font-size: 2rem;
+        padding-top: 4rem;
+        color: rgb(235, 54, 54);
+    }
+    .info p{
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .info video{
+        width: 100%;
+        height: 100%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background: rgb(235, 54, 54);
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .social h5{
+        color: rgb(0, 0, 0);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 150%;
+        letter-spacing: 0.22rem;
+        padding-bottom: 15%;
+        width: 100%;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+
+    footer .news form{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    footer .news input{
+        width: 100%;
+        border: none;
+        padding: 9%;
+        margin: 5%;
+        color:rgb(0, 0, 0);
+    }
+
+    footer .news button{
+        width: 118%;
+        border: none;
+        background-color: black;
+        color: white;
+        padding: 9%;
+        margin: 5%;
+    }
+
+    footer .news button:hover{
+        width: 120%;
+        border: none;
+        background-color: rgb(41, 37, 37);
+        color: white;
+        padding: 9%;
+        margin: 5%;
+    }
+
+    footer .social{
+        text-align: center;
+
+    }
+    footer .social ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+
+        
+    }
+    footer .social ul li{
+        text-align: center;
+        padding: 0rem 2rem;
+    }
+
+    i{
+        font-size: 250%;
+        text-align: center;
+    }
+    footer .social ul li a{
+        color: black;
+    }
+
+    footer .social ul li a:hover{
+        color: rgb(41, 37, 37);
+    }
+    footer .news h4{
+        color: black;
+        font-size: 1.4rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    footer .news input, footer .news button{
+        border-radius: 3px;
+    }
+
+    
+
+
+
+@media (max-width: 1024px){
+    .fent{
+        position: static;
+    }
+    header figure a img{
+        display: block;
+        margin: auto;
+    }
+    header{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    nav .menu{
+        margin-bottom: 2rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    header nav{
+        font-size: 100%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 0.13rem;
+        margin-right: 0rem;
+        margin-top: 1rem;
+    }
+    header nav ul li {
+        padding: .5rem;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 250%;
+    }
+    .content h2{
+        font-size: 0ch;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    footer .news{
+        padding-bottom: 5rem;
+        padding-top: 2rem;
+    }
+    footer .social{
+        padding-bottom: 2rem;
+    }
+}
